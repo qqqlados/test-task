@@ -1,0 +1,241 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+	font-style: normal;
+}
+
+body {
+	height: 100vh;
+	font-family: 'RakutenSansUi', sans-serif;
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-select {
+	width: 150px;
+	padding: 10px 40px 10px 15px;
+	font-size: 12px;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	appearance: none;
+	cursor: pointer;
+	transition: border-color 0.3s ease;
+}
+
+.dropdown-select:focus {
+	outline: none;
+	border-color: #000;
+	box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.dropdown-select option {
+	padding: 10px;
+	font-size: 12px;
+	color: #333;
+	background: #fff;
+}
+
+.dropdown-select option:checked {
+	background: #f1f1f1;
+}
+
+.dropdown::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #333; /* Колір стрілочки */
+	pointer-events: none; /* Щоб стрілка не блокувала взаємодію */
+}
+
+.logo {
+	a {
+		img {
+			width: 205px;
+		}
+	}
+}
+
+.input {
+	border: 1px solid #d8d6d6;
+	border-radius: 3px;
+}
+
+.input-search {
+	position: relative;
+	width: 50px;
+	border: none;
+	border-radius: 0px 3px 3px 0;
+	background-color: transparent;
+	text-indent: -9999px;
+	background-color: #000;
+	background-image: url('/imgs/search.svg');
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.text {
+	font-size: 25px;
+}
+
+.nohover {
+	cursor: text;
+}
+
+@font-face {
+	font-family: 'Azo Sans';
+	src: url('/fonts/AzoSans-Regular.woff') format('woff');
+	src: url('/fonts/AzoSans-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Azo Sans';
+	src: url('/fonts/AzoSans-Bold.woff') format('woff');
+	src: url('/fonts/AzoSans-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Azo Sans';
+	src: url('/fonts/AzoSans-Thin.woff') format('woff');
+	src: url('/fonts/AzoSans-Thin.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+}
