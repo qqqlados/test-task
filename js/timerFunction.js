@@ -34,7 +34,7 @@ function resetTimer(initialTime) {
 	timerInSeconds(initialTime)
 }
 
-timerInSeconds(5)
+timerInSeconds(90)
 
 function scrollToTop() {
 	console.log('Click!')
